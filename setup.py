@@ -169,7 +169,9 @@ setup(
             'girder = girder.cli:main'
         ],
         'girder.cli_plugins': [
-            'serve = girder.__main__:main'
+            'serve = girder.__main__:main',
+            'shell = girder.utility.shell:main',
+            'sftpd = girder.api.sftp:_main'
         ]
     }
 )
